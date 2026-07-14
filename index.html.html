@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Птичий отель «Крылья» 🦜 — Передержка попугаев в Краснодаре</title>
+  <meta name="description" content="Передержка попугаев в станице Северской (30 мин от Краснодара). Круглосуточное видеонаблюдение 24/7, свежая вода, правильный корм, орнитолог на связи. Всего 4 места! Бронируйте сейчас." />
+  <meta name="keywords" content="передержка попугаев, птичий отель, гостиница для попугаев, птичий хостел, передержка птиц, краснодар, северская" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦜</text></svg>" />
+  <meta property="og:title" content="Птичий отель «Крылья» 🦜 — Передержка попугаев в Краснодаре" />
+  <meta property="og:description" content="Передержка попугаев в станице Северской (Краснодар). Круглосуточное видеонаблюдение, свежая вода, правильный корм, орнитолог 24/7. Всего 4 места!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hapy-birds.netlify.app/" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b1a2e; color: #e0e6ed; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #2a5f8a 100%); padding: 80px 0 60px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: '🦜'; position: absolute; font-size: 200px; opacity: 0.05; top: -30px; right: -30px; transform: rotate(15deg); }
+    .hero h1 { font-size: 2.8em; color: #f0c040; margin-bottom: 15px; }
+    .hero h1 span { display: block; font-size: 0.5em; color: #b0c4de; margin-top: 8px; }
+    .hero p { font-size: 1.2em; max-width: 700px; margin: 0 auto 25px; color: #c8d6e5; }
+    .hero .phone { display: inline-block; background: #f0c040; color: #0b1a2e; padding: 18px 40px; border-radius: 50px; font-size: 1.5em; font-weight: 700; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 15px rgba(240,192,64,0.4); }
+    .hero .phone:hover { background: #ffd866; transform: scale(1.05); box-shadow: 0 6px 25px rgba(240,192,64,0.6); }
+    .hero .sub-info { margin-top: 20px; font-size: 0.95em; color: #8fa8c8; }
+    .hero .sub-info strong { color: #f0c040; }
+    /* Section */
+    section { padding: 60px 0; }
+    .section-title { text-align: center; font-size: 2em; color: #f0c040; margin-bottom: 40px; }
+    .section-title span { color: #8fa8c8; }
+    /* Pain block */
+    .pain { background: #11263c; }
+    .pain p { font-size: 1.05em; margin-bottom: 15px; padding-left: 25px; border-left: 3px solid #e74c3c; }
+    .pain .highlight { color: #e74c3c; font-weight: 700; }
+    .pain .safe { border-left-color: #2ecc71; }
+    .pain .safe strong { color: #2ecc71; }
+    /* Benefits grid */
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+    .benefit-card { background: #132a42; border-radius: 16px; padding: 25px; transition: all 0.3s; border: 1px solid #1e3f5e; }
+    .benefit-card:hover { transform: translateY(-4px); border-color: #f0c040; box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    .benefit-card .icon { font-size: 2em; margin-bottom: 10px; }
+    .benefit-card h3 { color: #f0c040; margin-bottom: 8px; font-size: 1.15em; }
+    .benefit-card p { color: #b0c4de; font-size: 0.95em; }
+    /* Price section */
+    .prices { background: #11263c; }
+    .price-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .price-card { background: #132a42; border-radius: 16px; padding: 30px; text-align: center; border: 1px solid #1e3f5e; transition: all 0.3s; }
+    .price-card:hover { border-color: #f0c040; transform: scale(1.03); }
+    .price-card .bird { font-size: 2.5em; margin-bottom: 10px; }
+    .price-card h3 { color: #e0e6ed; margin-bottom: 5px; }
+    .price-card .price { font-size: 2em; color: #f0c040; font-weight: 700; margin: 10px 0; }
+    .price-card .price small { font-size: 0.4em; color: #8fa8c8; }
+    .price-card ul { list-style: none; text-align: left; font-size: 0.9em; color: #b0c4de; }
+    .price-card ul li { padding: 4px 0; padding-left: 20px; position: relative; }
+    .price-card ul li::before { content: '✅'; position: absolute; left: 0; }
+    /* Reviews */
+    .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .review { background: #132a42; border-radius: 16px; padding: 25px; border-left: 4px solid #f0c040; }
+    .review p { font-style: italic; color: #c8d6e5; margin-bottom: 10px; }
+    .review .author { color: #f0c040; font-weight: 600; }
+    /* Conditions */
+    .conditions { background: #11263c; }
+    .cond-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .cond-item { background: #132a42; border-radius: 12px; padding: 18px; text-align: center; border: 1px solid #1e3f5e; }
+    .cond-item .icon { font-size: 1.8em; }
+    .cond-item p { font-size: 0.9em; color: #b0c4de; margin-top: 5px; }
+    /* CTA */
+    .cta { background: linear-gradient(135deg, #1a3a5c, #2a5f8a); text-align: center; padding: 60px 0; }
+    .cta h2 { font-size: 2em; color: #f0c040; margin-bottom: 15px; }
+    .cta .warning { background: #e74c3c; color: white; display: inline-block; padding: 8px 25px; border-radius: 30px; font-weight: 700; margin-bottom: 20px; font-size: 1.1em; }
+    .cta p { max-width: 600px; margin: 0 auto 20px; color: #c8d6e5; }
+    .cta .phone-big { display: inline-block; background: #f0c040; color: #0b1a2e; padding: 18px 50px; border-radius: 50px; font-size: 1.8em; font-weight: 700; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 20px rgba(240,192,64,0.4); }
+    .cta .phone-big:hover { background: #ffd866; transform: scale(1.05); }
+    /* Footer */
+    footer { background: #081420; text-align: center; padding: 25px 0; color: #5a7a9a; font-size: 0.85em; }
+    footer a { color: #f0c040; text-decoration: none; }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.8em; }
+      .hero .phone { font-size: 1.2em; padding: 14px 28px; }
+      .cta .phone-big { font-size: 1.3em; padding: 14px 30px; }
+      .section-title { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <h1>🦜 Птичий отель «Крылья» <span>Передержка попугаев | Птичий хостел | Гостиница для попугаев</span></h1>
+    <p>Место, где вашу птичку полюбят как родную!<br>📍 Станица Северская, 30 минут от Краснодара.</p>
+    <a class="phone" href="tel:+79002352644">📞 8 (900) 235-26-44</a>
+    <div class="sub-info">Специализируемся на крупных и средних породах: <strong>Жако, Какаду, Ара, Корелла, неразлучники</strong> и другие.</div>
+  </div>
+</header>
+
+<!-- PAIN BLOCK -->
+<section class="pain">
+  <div class="container">
+    <h2 class="section-title">😰 Знакомая ситуация?</h2>
+    <p>Вы купили долгожданные билеты в отпуск. Чемоданы собраны. Но сердце сжимается от тревоги…</p>
+    <p>Попросить <span class="highlight">соседей?</span> Они забудут поменять воду. Попугай гадит в поилку — и через день птица пьёт отраву.</p>
+    <p>Оставить <span class="highlight">родственникам?</span> Они не знают, что попугаю нужно общение, что он может заскучать и начать выщипывать себе перья от стресса.</p>
+    <p>Взять <span class="highlight">с собой?</span> Переезд — колоссальный стресс для птицы. Риск простуды, риск заболеваний, риск что птица погибнет в дороге.</p>
+    <p class="safe"><strong>💔 Каждый год десятки попугаев гибнут, пока хозяева отдыхают.</strong> От обезвоживания, голода, перегрева, стресса и одиночества.</p>
+    <p style="border-left-color:#f0c040; font-weight:700; font-size:1.1em; color:#f0c040;">Не допустите этого! Доверьте своего пернатого друга профессионалам.</p>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section>
+  <div class="container">
+    <h2 class="section-title">✅ Почему владельцы птиц плачут от счастья?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card"><div class="icon">🕐</div><h3>Круглосуточное присутствие 24/7</h3><p>В доме всегда кто-то есть. Ваша птица никогда не останется одна.</p></div>
+      <div class="benefit-card"><div class="icon">📹</div><h3>Видеонаблюдение онлайн 24/7</h3><p>Вы в любой точке мира открываете приложение и видите своего питомца.</p></div>
+      <div class="benefit-card"><div class="icon">💧</div><h3>Свежая вода 2–3 раза в сутки</h3><p>Попугаи обожают гадить в поилки. Мы меняем воду сразу — никакой грязной воды!</p></div>
+      <div class="benefit-card"><div class="icon">🥗</div><h3>Правильный корм</h3><p>Обмен веществ у птиц в 10 раз быстрее человеческого. Кормим строго по графику.</p></div>
+      <div class="benefit-card"><div class="icon">💬</div><h3>Общение и любовь</h3><p>Вашему жако или корелле не будет одиноко. С ним разговаривают и играют.</p></div>
+      <div class="benefit-card"><div class="icon">👨‍⚕️</div><h3>Орнитолог на подхвате 24/7</h3><p>Опытный врач на связи. При малейшем недомогании — мгновенная консультация.</p></div>
+      <div class="benefit-card"><div class="icon">🏠</div><h3>Просторные клетки</h3><p>Каждая 1 кв.м, на ножках 20 см от пола, с поддоном для чистоты. Никаких тесных переносок!</p></div>
+      <div class="benefit-card"><div class="icon">🌡️</div><h3>Тёплый пол и вентиляция</h3><p>Идеальный микроклимат без сквозняков.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="prices">
+  <div class="container">
+    <h2 class="section-title">💰 Цены</h2>
+    <div class="price-cards">
+      <div class="price-card">
+        <div class="bird">🐦</div>
+        <h3>Мелкие</h3>
+        <p style="color:#8fa8c8;">(волнистые, неразлучники, амадины)</p>
+        <div class="price">от 300 ₽ <small>/сутки</small></div>
+        <ul>
+          <li>Индивидуальная клетка</li>
+          <li>Корм и вода 2–3 раза в день</li>
+          <li>Общение и ласка</li>
+        </ul>
+      </div>
+      <div class="price-card" style="border-color:#f0c040; border-width:2px;">
+        <div class="bird">🕊️</div>
+        <h3>Средние</h3>
+        <p style="color:#8fa8c8;">(кореллы, розеллы)</p>
+        <div class="price">от 500 ₽ <small>/сутки</small></div>
+        <ul>
+          <li>Индивидуальная клетка 1 кв.м</li>
+          <li>Видеонаблюдение 24/7</li>
+          <li>Корм и вода 3 раза в день</li>
+          <li>Общение и игры</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <div class="bird">🦜</div>
+        <h3>Крупные</h3>
+        <p style="color:#8fa8c8;">(жако, какаду, ара)</p>
+        <div class="price">от 800 ₽ <small>/сутки</small></div>
+        <ul>
+          <li>Просторная VIP-клетка</li>
+          <li>Видеонаблюдение 24/7</li>
+          <li>Правильный рацион + фрукты</li>
+          <li>Ежедневное общение</li>
+          <li>Орнитолог на связи</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:20px; color:#f0c040; font-weight:600;">Специальные цены при бронировании от 10 дней! 🎉</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+  <div class="container">
+    <h2 class="section-title">🗣️ Что говорят наши гости</h2>
+    <div class="reviews">
+      <div class="review">
+        <p>«Наконец-то! Я могу спокойно уехать на море, а мой Какаду под присмотром!»</p>
+        <div class="author">— Елена, Краснодар</div>
+      </div>
+      <div class="review">
+        <p>«Раньше просил соседку кормить… Вернулся — попугай больной. Воду не меняла неделю. Больше никогда! Только профессионалы!»</p>
+        <div class="author">— Александр, ст. Северская</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section class="conditions">
+  <div class="container">
+    <h2 class="section-title">🏡 Условия содержания</h2>
+    <div class="cond-list">
+      <div class="cond-item"><div class="icon">🌡️</div><p>Тёплый пол + вентиляция — идеальный климат</p></div>
+      <div class="cond-item"><div class="icon">🏠</div><p>Индивидуальная клетка на ножках с поддоном</p></div>
+      <div class="cond-item"><div class="icon">📹</div><p>IP-камеры с доступом 24/7 для вас</p></div>
+      <div class="cond-item"><div class="icon">🥗</div><p>Корм и вода 2–3 раза в день</p></div>
+      <div class="cond-item"><div class="icon">💕</div><p>Общение и ласка ежедневно</p></div>
+      <div class="cond-item"><div class="icon">👨‍⚕️</div><p>Орнитолог на связи 24/7</p></div>
+      <div class="cond-item"><div class="icon">🛡️</div><p>Карантин новых постояльцев — безопасность</p></div>
+      <div class="cond-item"><div class="icon">🚕</div><p>Срочный выезд — от 1000 ₽</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="warning">⚠️ МЕСТ ВСЕГО 4!</div>
+    <h2>Мы берём не больше 4 птиц одновременно</h2>
+    <p>Чтобы уделить внимание каждому. Места разлетаются быстро, особенно на праздники и лето.</p>
+    <p style="font-size:1.1em; font-weight:600;">Звоните и бронируйте сейчас!</p>
+    <a class="phone-big" href="tel:+79002352644">📞 8 (900) 235-26-44</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>🦜 Птичий отель «Крылья» | Передержка попугаев в Краснодаре</p>
+    <p>📍 Станица Северская, 30 минут от Краснодара | 📞 <a href="tel:+79002352644">8 (900) 235-26-44</a></p>
+    <p style="margin-top:10px; font-size:0.8em;">© 2025 Птичий отель «Крылья». Все права защищены.</p>
+  </div>
+</footer>
+
+</body>
+</html>
